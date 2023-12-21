@@ -71,11 +71,13 @@ export function extractNumber() {
   remaining.value = (remaining.value.filter((number) => number !== extractedNumber));
 
   current.value = extractedNumber;
-  let temparray = last.value;
+  let temparray = [...last.value];
   temparray.unshift(extractedNumber);
-  temparray.pop();
+  if (temparray.length > 5)temparray.pop();
   last.value= temparray;
-  table.value[extractedNumber] = true;
+  let temparray2 = [...table.value];
+  temparray2[extractedNumber] = true;
+  table.value= temparray2;
 
   return extractedNumber;
 }
