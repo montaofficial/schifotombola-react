@@ -1,11 +1,14 @@
 import "./App.css";
+import { current, extractNumber } from "./data";
+import Table from './Table';
 
 function App() {
   return (
     <>
+    <Table/>
       <div className="current">
         <h2>ESTRATTO IL</h2>
-        <div className="current-number">24</div>
+        <div className="current-number">{current.value}</div>
       </div>
 
       <div className="last">
@@ -25,6 +28,7 @@ function App() {
           <div className="last-number">12</div>
         </div>
       </div>
+      <button onClick={extractNumber}>EXTRACT</button>
     </>
   );
 }

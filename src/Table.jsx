@@ -1,20 +1,22 @@
+import { table } from "./data";
+
 export default function Table() {
   return (
     <div className="grid">
       <div className="row">
-        <span className="number extracted" id="1">
+        <span className={"number" +(table.value[1] ? "extracted" : "")} id="1">
           1
         </span>
-        <span className="number" id="2">
+        <span className={"number" +(table.value[2] ? "extracted" : "")} id="2">
           2
         </span>
-        <span className="number" id="3">
+        <span className={"number" +(table.value[3] ? "extracted" : "")}id="3">
           3
         </span>
-        <span className="number" id="4">
+        <span className={"number" +(table.value[4] ? "extracted" : "")} id="4">
           4
         </span>
-        <span className="number" id="5">
+        <span className={"number" +(table.value[5] ? "extracted" : "")} id="5">
           5
         </span>
         <span className="number" id="6">
