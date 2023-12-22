@@ -22,6 +22,20 @@ body {
   position: relative;
 }
 
+.btn {
+  position: absolute;
+  bottom: 6px;
+}
+
+.btn1 {
+  left: 6px;
+}
+
+.btn2 {
+  right: 6px;
+  background-color: red;
+}
+
 .nice {
   color: pink;
 }
